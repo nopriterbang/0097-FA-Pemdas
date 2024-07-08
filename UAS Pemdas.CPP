@@ -1,5 +1,5 @@
 /**
- * @file UCP3.CPP
+ * @file UAS Pemdas.CPP
  * @author Naufal Priyamukti Wibowo (20230140097)
  * @brief UAS Pemograman dasar
  * @version 0.1
@@ -12,11 +12,11 @@
 /*!
 * \mainpage Sistem manajememen perekapan presensi, activity, exercise, dan tugas akhir pada mata kuliah
 *
-* \section structure_sec Struktur kode terdiri dari 2 class
+* \section structure_sec Struktur kode terdiri dari 3 class dan 1 fungsi utama
 * - \b matakuliah : untuk menangani presensi, activity, exercise, dan tugas akhir
 * - \b pemograman : untuk menangani matakuliah pemograman
 * - \b jaringan : untuk menanganu matakuliah jaringan
-* - \b int main : sebagai tempat eksekusi program
+* - \b int main : sebagai fungsi utama tempat eksekusi program
 *
 *
 */
@@ -244,8 +244,8 @@ int main()
 {
     char pilih;
     Matakuliah *Matakuliah;
-    Pemrograman  pemrograman;
-    Jaringan  jaringan;
+    Pemrograman  *pemrograman;
+    Jaringan  *jaringan;
 
     /**
      * @brief tampilan untuk memilih mata kuliah
